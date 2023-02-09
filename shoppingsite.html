@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping site</title>
+    <link rel="stylesheet" href="./css/shopping.css" />
+    <script src="/jquery-3.6.3.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header-part starts -->
+    <section class="header">
+      <div class="logo">
+        <h1 class="logo_title">SHOP Me</h1>
+      </div>
+      <div class="nav-menu">
+        <ul class="nav-items">
+          <li class="nav" id="items1"><a href="#clothing">CLOTHING</a></li>
+          <li class="nav" id="items2"><a href="#accesories">ACCESORIES</a></li>
+        </ul>
+      </div>
+      <div class="icons-bar">
+        <input type="search" id="search" placeholder="Search me" />
+        <div class="cart">
+          <a href="./checkout.html">
+            <i class="fa-solid fa-bag-shopping"></i><span id="count">0</span></a
+          >
+        </div>
+        <i class="fa-regular fa-user"></i>
+      </div>
+    </section>
+    <!-- header-part ends -->
+
+    <!-- slider starts -->
+    <div class="middle_container">
+      <div class="slider">
+        <div class="slides">
+          <!-- input buttons starts -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <!-- input button ends -->
+          <!-- slide images start -->
+          <div class="slide first">
+            <img src="./images/first image.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./images/second.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./images/third image.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./images/fourth image.png" alt="" />
+          </div>
+          <!-- slide images end -->
+          <!-- automatic navigation starts -->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!-- auromatic navigation ends -->
+          <!-- manual navigation starts -->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!-- manual navigation ends -->
+        </div>
+      </div>
+      <!-- slider ends -->
+      <!-- cards enter -->
+      <div id="cards_container">
+        <div id="clothing">
+          <h1 class="heading_title">CLOTHING FOR MEN AND WOMEN</h1>
+        </div>
+        <div id="accesories">
+          <h1 class="heading_title">ACCESORIES FOR MEN AND WOMEN</h1>
+        </div>
+      </div>
+    </div>
+    <!-- cards session ends -->
+    <!-- footer session starts -->
+    <div id="footer_container">
+      <div class="row column1">
+        <h3>ONLINE STORE</h3>
+        <a href="#clothing">MEN</a>
+        <a href="#clothing">WOMEN</a>
+        <a href="#accesories">MEN</a>
+        <a href="#accesories">WOMEN</a>
+      </div>
+      <div class="row column2">
+        <h3>HELPFUL LINKS</h3>
+        <a href="./shoppingsite.html">HOME</a>
+        <a href="./shoppingsite.html">ABOUT</a>
+        <a href="./shoppingsite.html">CONTACT</a>
+      </div>
+      <div class="row column3">
+        <h3>PARTNERS</h3>
+        <a href="./shoppingsite.html">ZARA</a>
+        <a href="./shoppingsite.html">PANTALOONS</a>
+        <a href="./shoppingsite.html">LEVIS</a>
+        <a href="./shoppingsite.html">UCB</a>
+        <a href="./shoppingsite.html">+ MANY MORE</a>
+      </div>
+      <div class="row column4">
+        <h3>ADDRESS</h3>
+        <a href="./shoppingsite.html">BUILDING 101</a>
+        <a href="./shoppingsite.html">CENTRAL AVENUE</a>
+        <a href="./shoppingsite.html">LA - 902722</a>
+        <a href="./shoppingsite.html">UNITED STATES</a>
+      </div>
+    </div>
+    <div class="logo-fixed">
+      <img src="./images/edyod logo.png" alt="">
+    </div>
+
+    <script src="./js/shopping.js"></script>
+  </body>
+</html>
